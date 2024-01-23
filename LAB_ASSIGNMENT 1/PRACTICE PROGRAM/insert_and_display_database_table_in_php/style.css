@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+body{
+    height: 400px;
+    width: 100vh;
+    background-color: lightcyan;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0px 0px 20% 20%;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 5px;
+    padding: 10px;
+    margin-left: 50%;
+    
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+    margin-left: 50%;
+    border-style: groove;
+    margin-top: 10%;
+    width:103vh;
+    border-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input{
+    outline:  none;
+    border-color: lightblue;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 5px 0 0;
+}
+input,select{
+    margin: 0px 0px;
+    outline: none;
+    cursor: pointer;
+}
+input[type="reset"]{
+    background-color: red;
+    color: white;
+    margin-left: 0%;
+    margin-right: 25%;
+}
+

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Customer Details!</h1>
+    <fieldset>
+        <form action="Q1.php" method="POST">
+            <label for="name"><b>Enter your Name:</b></label>
+            <input type="text" name="name" id="name"><br>
+            <br>
+            <label for="list"><b>Select products:</b></label>
+            <select name="list[]" multiple="multiple">
+                <option value="sugar">sugar</option>
+                <option value="corn">corn</option>
+                <option value="tea powder">tea powder</option>
+                <option value="cookies">cookies</option>
+            </select><br>
+            <br>
+            <label for="sugar"><b>Enter Quantity for sugar(kg):</b></label>
+           <input type="number" name="sugar" id="sugar"><br>
+           <br>
+           <label for="corn"><b>Enter Quantity for corn(kg):</b></label>
+           <input type="number" name="corn" id="corn"><br>
+           <br>
+           <label for="tea"><b>Enter Quantity for tea powder(kg):</b></label>
+           <input type="number" name="tea" id="tea"><br>
+           <br>
+           <label for="cookies"><b>Enter Quantity for cookies(kg):</b></label>
+           <input type="number" name="cookies" id="cookies"><br>
+           <br>
+           <input type="submit" name="submit" id="submit" value="submit">
+           <input type="reset" name="reset" id="reset" value="reset">
+        </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            margin-left: 25%;
+            margin-right: 25%;
+            border-radius: 5px;
+        }
+        h1{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flight Registration!</h1>
+    <fieldset>
+        <form action="flight.php" method="POST">
+            <label for="name"><b>Enter customer name:</b></label>
+            <input type="text" name="name" id="name"><br>
+            <br>
+            <label for="adr"><b>Enter Your Address:</b></label>
+            <input type="text" name="adr" id="adr"><br>
+            <br>
+            <label for="b_d"><b>Birth Date:</b></label>
+            <input type="date" name="b_d" id="b_d"><br>
+            <br>
+            <label for="mobile"><b>Enter your mobile no.:</b></label>
+            <input type="number" name="mobile" id="mobile"><br>
+            <br>
+            <input type="submit" name="submit" id="submit" value="submit">
+            <input type="reset" name="reset" id="reset" value="reset">
+        </form>
+    </fieldset>
+</body>
+</html>

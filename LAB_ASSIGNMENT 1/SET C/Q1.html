@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Q1.css">
+</head>
+<body>
+    <div id="main">
+        <h2>AIR ticket reservation</h2>
+        <div id="form">
+            <form action="Q1.php" method="post">
+                <div class="input">
+                    <label for="name"><u>Enter Name:</u></label>
+                    <input type="text" name="name" id="inp"><br>
+                </div>
+                <div class="input">
+                    <label for="address"><u>Address:</u></label>
+                    <input type="text" name="address" id="inp">
+                </div>
+                <div class="input">
+                    <label for="contact"><u>Contact No.:</u></label>
+                    <input type="number" name="contact" id="inp"><br>
+                </div >
+                <div class="input">
+                    <label for="src"><u>Source:</u></label>
+                    <input type="text" name="src" id="inp">
+                </div >
+                <div class="input">
+                    <label for="dest"><u>Destination:</u></label>
+                    <input type="text" name="dest" id="inp">
+                </div>
+                <div class="input">
+                    <label for="date"><u>Date of journey:</u></label>
+                    <input type="date" name="date" id="inp">
+                </div>
+                <div class="input">
+                    <label for="gender"><u>Gender of passenger:</u></label>
+                    <select name="gender" id="gen">
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                    </select>   
+                </div>
+                <div class="input">
+                    <label for="person"><u>No.of persons:</u></label>
+                    <input type="text" name="person" id="inp">
+                </div>
+                <div class="input">
+                    <label for="class"><u>Choice class:</u></label>
+                    <select name="class" id="class">
+                        <option value="1">Normal class</option>
+                        <option value="2">Special class</option>
+                    </select>
+                </div>
+               
+                <div class="input">
+                    <label for="price"><u>Price of per Ticket:</u></label>
+                    <input type="text" name="price" id="inp">
+                </div>
+                <div class="input">
+                    <input type="submit" name="submit" id="submit" value="submit">
+                    <input type="reset" name="reset" id="reset" value="reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

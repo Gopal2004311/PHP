@@ -1,0 +1,36 @@
+table{
+    display: inline;
+    padding: 5px;
+    overflow: hidden;
+    margin: 2%;
+    margin-top: 10%;
+}
+button,a{
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-style:italic;
+}
+.update{
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+
+}
+.delete{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+caption{
+    font-size: large;
+    font-style: italic;
+}

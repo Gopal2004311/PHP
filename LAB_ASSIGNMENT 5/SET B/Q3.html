@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Detail!</h1>
+    <fieldset>
+        <form action="Q3.php" method="POST">
+            <label for="name"><b>Enter your name:</b></label>
+            <input type="text" name="name" id="name"><br>
+            <br>
+            <label for="select"><b>Select languages:</b></label>
+            <select name="select[]" id="select" multiple>
+                <option value="C programming">C programming</option>
+                <option value="HTML">HTML</option>
+                <option value="javascript">javascript</option>
+                <option value="PHP">PHP</option>
+                <option value="C++">C++</option>
+                <option value="java">java</option>
+                <option value="python">python</option>
+                <option value="ReactJS">ReactJS</option>
+                <option value="AngularJS">AngularJS</option>
+            </select><br>
+            <br>
+            <input type="submit" name="submit" id="submit" value="submit">
+            <input type="reset" name="reset" id="reset" value="reset">
+        </form>
+    </fieldset>
+</body>
+</html>

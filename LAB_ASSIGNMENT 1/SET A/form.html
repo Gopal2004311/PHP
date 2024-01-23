@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containt">
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <form action="form.php" method="POST">
+        <div class="name">
+            <label for="s_name">first name:</label><br>
+            <input type="text" name="s_name" id="s_name">
+        </div>
+        <div class="name">
+            <label for="m_name">middle name:</label><br>
+            <input type="text" name="m_name" id="m_name">
+        </div>
+        <div class="name">
+            <label for="last_name">middle name:</label><br>
+            <input type="text" name="last_name" id="last_name">
+        </div>
+        <div class="gender">
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="gen" value="male">male
+            <input type="radio" name="gender" id="gen" value="female">female
+        </div>
+        <div class="address">
+            <label for="adr1">address</label>
+            <textarea name="adr1" id="adr1" cols="30" rows="10"></textarea>
+        </div>
+        <div class="select_class">
+            <label for="class">class:</label>
+            <select name="class" id="class">
+                <option value="FYBBACA">FYBBACA</option>
+                <option value="SYBBACA">SYBBACA</option>
+                <option value="TYBBACA">TYBBACA</option>
+            </select>
+        </div>
+        <div class="hobbies">
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" name="ho1[]" id="hobi" value="dance">dance <br>
+            <input type="checkbox" name="ho1[]" id="hobi" value="writing">writing <br>
+            <input type="checkbox" name="ho1[]" id="hobi" value="singing">singing <br>
+        </div>
+        <div class="button">
+            <input type="submit" name="submit" id="submit" value="submit">
+            <input type="reset" name="reset" id="reset" value="reset">
+        </div>
+    </form>
+</div>
+</body>
+</html>

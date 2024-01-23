@@ -1,0 +1,80 @@
+*{
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(229, 234, 240);
+}
+body{
+    height:auto;
+    width: auto;
+}
+.td-data{
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: red;
+}
+table{
+    border-radius: 5px;
+    margin-left: 15%;
+    margin-right: 15%;
+    box-shadow: 10px solid black;
+}
+td,th,tr{
+    padding: 5px;
+    border-radius: 4px;
+    
+}
+th{
+    background-color: black;
+    color:white;
+}
+caption{
+    margin-top: 10px;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 40px;
+}
+#update{
+    background-color: green;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    font-size: medium;
+    border-color: green;
+
+}
+#delete{
+    background-color: red;
+    border-color: red;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: medium;
+}
+#update:hover{
+    background-color: white;
+    color: green;
+    transition: 1ms;
+    border-color: white;
+
+}
+#delete:hover{
+    background-color: white;
+    color: red;
+    transition: 1ms;
+    border-color: white;
+}
