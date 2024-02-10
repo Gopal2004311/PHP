@@ -27,26 +27,7 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h1{
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            font-style: italic;
-        }
-        fieldset{
-            margin: 0px 25% 0px 25%;
-        }
-        table{
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid black;
-        }
-        tr,td,th{
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Accept Date And Display Details!</h1>

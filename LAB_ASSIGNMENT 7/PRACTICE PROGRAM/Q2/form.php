@@ -62,22 +62,7 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        fieldset{
-            margin-left: 25%;
-            margin-right: 25%;
-            border-radius: 5px;
-        }
-        h1,h2{
-            text-align: center;
-            align-items: center;
-        }
-        input[type="submit"],input[type="reset"],button{
-            margin-left: 3%;
-            margin-right: 3%;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Insert data into database!</h1>

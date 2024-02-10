@@ -21,42 +21,7 @@ try {
 }
 
 ?>
-    <style>
-        table{
-            display: inline-block;
-            margin-left: 2%;
-            margin-right: 2%;
-            margin-bottom: 2%;
-        }
-        h1{
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-        }
-        .search1{
-            width: 52%;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5%;
-            padding-right: 35%;
-        }
-        #myInput,#myInput1{
-            width: 180%;
-            outline: none;
-            padding-top: 2%;
-            padding-bottom: 2%;
-            margin-left: 5%;
-}
-        .content1{
-            margin-left: 27%;
-            margin-right: 27%;
-            border: 1px solid black;
-            text-align: center;
-            justify-content: center;
-            padding: 0;
-        }
-    </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <button><a href="form.php">back</a></button>

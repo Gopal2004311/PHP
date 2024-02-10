@@ -25,21 +25,7 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h1{
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
-        fieldset{
-            margin-left: 25%;
-            margin-right: 25%;
-            border-radius: 5px;
-        }
-        div{
-            margin-left: 5%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Update!</h1>
