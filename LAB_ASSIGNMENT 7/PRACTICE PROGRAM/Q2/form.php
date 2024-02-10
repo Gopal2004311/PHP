@@ -1,45 +1,61 @@
 <!--2. Consider the following entities and their relationships
 Customer (c_no, c_name, c_city, c_ph_no )
 Ticket (t_no, booking_date, fare, traveling_date)
-The relationship between Customer and Ticket is one-to-many. Create a RDB in 3 NF for the 
+The relationship between Customer and Ticket is one-to-many. Create a RDB in 3 NF for the
 above.
 Using the above database, write a PHP script to accept date and display,
 1) The total fare collected from customers on a given date.
 2) Ticket details booked by the customer.-->
-<?php 
+<?php
+require "insert.php";
 error_reporting(0);
-$conn=mysqli_connect("localhost","root","","php");
-$query="SELECT * FROM customer ORDER BY c_no DESC LIMIT 1";
-$result=mysqli_query($conn,$query);
-if($result)
-{
-   $data=mysqli_fetch_assoc($result);
-   $c_no=$data["c_no"];
-   if($c_no==null)
-   {
-       $new="1";
-   }else{
-       $new=$c_no+1;
-   }
-}
-
-$query1="SELECT * FROM ticket ORDER BY t_no DESC LIMIT 1";
-$result1=mysqli_query($conn,$query1);
-if($result1)
-{
-    $data1=mysqli_fetch_assoc($result1);
-    $t_no=$data1["t_no"];
-    if($t_no==null)
-    {
-        $new1="101";
-        
-    }else{
-        $new1=$t_no+1;
+try {
+    $conn = mysqli_connect("localhost", "root", "", "php");
+    if ($conn) {
+        $query = "SELECT * FROM customer ORDER BY c_no DESC LIMIT 1";
+        $result = mysqli_query($conn, $query);
+        if ($result) {
+            $data = mysqli_fetch_assoc($result);
+            $c_no = $data["c_no"];
+            if ($c_no == null) {
+                $new = "1";
+            } else {
+                $new = $c_no + 1;
+            }
+        } else {
+            throw new Exception("Server not connected!");
+        }} else {
+        throw new Exception("Server does not connected!");
     }
+} catch (Exception $error) {
+    echo "<script>alert('{$error->getMessage()}');</script>";
 }
+try {
+    if ($conn) {
+        $query1 = "SELECT * FROM ticket ORDER BY t_no DESC LIMIT 1";
+        $result1 = mysqli_query($conn, $query1);
+        if ($result1) {
+            $data1 = mysqli_fetch_assoc($result1);
+            $t_no = $data1["t_no"];
+            if ($t_no == null) {
+                $new1 = "101";
 
+            } else {
+                $new1 = $t_no + 1;
+            }
+        } else {
+            throw new Exception("Server not connected!");
+        }
+    } else {
+        throw new Exception("Server not connected!");
+    }
 
+} catch (Exception $error) {
+    echo "<script>alert('{$error->getMessage()}');</script>";
+}
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,9 +83,9 @@ if($result1)
     <h1>Insert data into database!</h1>
     <fieldset>
         <h2>Customer Details!</h2>
-        <form action="insert.php" method="POST">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
             <label for="c_no"><b>Customer No.:</b></label>
-            <input type="number" name="c_no" id="c_no" value="<?php echo$new;?>" readonly><br>
+            <input type="number" name="c_no" id="c_no" value="<?php echo $new; ?>" readonly><br>
             <br>
             <label for="c_name"><b>Customer Name:</b></label>
             <input type="text" name="c_name" id="c_name"><br>
@@ -99,12 +115,12 @@ if($result1)
     </fieldset>
     <fieldset>
         <h2>Ticket Details!</h2>
-        <form action="insert.php" method="POST">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
             <label for="c_no1"><b>Customer No.:</b></label>
             <input type="number" name="c_no1" id="c_no1"><br>
             <br>
             <label for="t_no"><b>Ticket No.:</b></label>
-            <input type="number" name="t_no" id="t_no" value="<?php echo$new1;?>" readonly><br>
+            <input type="number" name="t_no" id="t_no" value="<?php echo $new1; ?>" readonly><br>
             <br>
             <label for="b_date">Booking Date:</label>
             <input type="date" name="b_date" id="b_date"><br>
